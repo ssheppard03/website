@@ -1,0 +1,18 @@
+---
+import Layout from "../layouts/Layout.astro"
+import { ContactMeForm } from "../components/ContactMeForm"
+---
+
+<Layout title="Contact Me">
+    <div class="mx-auto max-w-screen-md">
+        <div class="ml-5">
+            <h1 class="text-4xl text-blue-500 font-bold mt-24">Contact Me</h1>
+            <p class="mt-2.5 text-white">
+                Feel free to contact me with any inquiries.
+            </p>
+        </div>
+
+
+        <ContactMeForm client:visible/>
+    </div>
+</Layout>
