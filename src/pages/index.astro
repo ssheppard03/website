@@ -1,6 +1,16 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import photo from '../photos/photo.jpg'
+import photo from '../photos/photo.jpg';
+import python from '../photos/python-logo.png';
+import r from '../photos/r-logo.jpg';
+import cpp from '../photos/c++.png';
+import ros from '../photos/ros-logo.png';
+import react from '../photos/react-logo.png';
+import astro from '../photos/astro-logo.png';
+import html from '../photos/html-logo.png';
+import css from '../photos/css-logo.png';
+import javascript from '../photos/javascript-logo.png';
+import tailwind from '../photos/tailwind-logo.png';
 ---
 
 <Layout title="About Me">
@@ -17,16 +27,16 @@ import photo from '../photos/photo.jpg'
 		</div>
 		<div class="rounded-lg mt-12 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-10 place-items-center xl:place-items-evenly 
 		w-11/12 mx-auto bg-white py-4 justify-center items-center border-2 border-blue-500 gap-4">
-			<img class="w-40 mx-8" src="/python-logo.png" alt="">
-			<img class="w-40 mx-8" src="/r-logo.jpg" alt="">
-			<img class="w-40 mx-8" src="/c++.png" alt="">
-			<img class="w-40 mx-8" src="/ros-logo.png" alt="">
-			<img class="w-40 mx-8" src="/react-logo.png" alt="">
-			<img class="w-40 mx-8 bg-gray-900 rounded-xl" src="/astro-logo.png" alt="">
-			<img class="w-40 mx-8" src="/html-logo.png" alt="">
-			<img class="w-28 mx-8" src="/css-logo.png" alt="">
-			<img class="w-40 mx-8" src="/javascript-logo.png" alt="">
-			<img class="w-40 mx-8" src="/tailwind-logo.png" alt="">
+			<img class="w-40 mx-8" src={python} alt="">
+			<img class="w-40 mx-8" src={r} alt="">
+			<img class="w-40 mx-8" src={cpp} alt="">
+			<img class="w-40 mx-8" src={ros} alt="">
+			<img class="w-40 mx-8" src={react} alt="">
+			<img class="w-40 mx-8 bg-gray-900 rounded-xl" src={astro} alt="">
+			<img class="w-40 mx-8" src={html} alt="">
+			<img class="w-28 mx-8" src={css} alt="">
+			<img class="w-40 mx-8" src={javascript} alt="">
+			<img class="w-40 mx-8" src={tailwind} alt="">
 		</div>
 	</main>
 </Layout>
