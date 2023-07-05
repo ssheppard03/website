@@ -36,7 +36,7 @@ export const ContactMeForm = () => {
         };
 
     return (
-    <form ref={form} onSubmit={handleSubmit(sendEmail)} className="rounded-lg w-[576px] mx-auto mt-4 py-4 px-5">
+    <form ref={form} onSubmit={handleSubmit(sendEmail)} className="rounded-lg w-full mx-auto mt-4 py-4 px-5">
         <input 
         type="email" 
         {...register("email")} 
