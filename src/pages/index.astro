@@ -11,21 +11,27 @@ import html from '../photos/html-logo.png';
 import css from '../photos/css-logo.png';
 import javascript from '../photos/javascript-logo.png';
 import tailwind from '../photos/tailwind-logo.png';
+import fmuntenth from "../photos/fmuntenth.png"
+import website from '../photos/website.png'
+import paradigm from '../photos/paradigm.png'
+import ymca from "../photos/ymca.png"
+import canada from "../photos/canada.png"
+import mun from "../photos/mun.png"
 ---
 
 <Layout title="About Me">
 	<main class="max-width-screen-lg">
-		<div class="sm:grid lg:flex lg:flex-row-reverse mx-auto sm:w-10/12 lg:w-1/2">
-			<img src={photo} alt="" class="mt-4 rounded-lg shadow-lg mx-auto lg:w-1/2 border-2 border-blue-500">
-			<div class="my-auto grid place-items-center lg:place-items-start">
-				<h1 class="text-4xl text-blue-500 font-bold">About Me</h1>
-				<p class="mt-4 text-white mx-4 lg:mr-12 lg:ml-0">
-					I am a second year computer science student at Memorial University of Newfoundland. My interests are robotics and machine learning. 
+		<div class="grid mx-auto -mt-8">
+			<img src={photo} alt="" class="rounded-lg shadow-lg mx-auto border-2 border-blue-500 scale-75">
+			<div class="my-auto grid place-items-center">
+				<h1 class="text-4xl text-blue-500 font-bold text-center">About Me</h1>
+				<p class="mt-4 text-white mx-4 lg:mr-12 lg:ml-0 text-center">
+					I am a third year computer science student at Memorial University of Newfoundland. My interests are robotics and machine learning. 
 					I enjoy solving problems while improving my programming skills.
 				</p>
 			</div>
 		</div>
-		<div class="rounded-lg mt-12 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-10 place-items-center xl:place-items-evenly 
+		<!-- <div class="rounded-lg mt-12 grid grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-10 place-items-center xl:place-items-evenly 
 		w-11/12 mx-auto bg-white py-4 justify-center items-center border-2 border-blue-500 gap-4">
 			<img class="w-40 mx-8" src={python} alt="">
 			<img class="w-40 mx-8" src={r} alt="">
@@ -37,6 +43,92 @@ import tailwind from '../photos/tailwind-logo.png';
 			<img class="w-24 mx-8" src={css} alt="">
 			<img class="w-40 mx-8" src={javascript} alt="">
 			<img class="w-40 mx-8" src={tailwind} alt="">
+		</div> -->
+		<h1 class="text-4xl text-blue-500 font-bold mt-12 text-center">My Projects</h1>
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-16 mx-8 my-16">
+			<div class="rounded-lg border border-gray-200 bg-white px-2 py-2 flex flex-col">
+				<img src={paradigm} alt="" class="">
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500">Paradigm Engineering Software Team Lead</h2>
+					<p class="text-gray-800">
+						Leading a team of 10 computer engineering and computer science to design an algorithm to autonomously pilot a go kart around a track using python, C++, ROS2
+						and Gazebo Classic. The team is set to compete in the Autonomous Karting Series hosted by Purdue University in May 2025.
+					</p>
+					<a href="https://munparadigm.com/" class="bg-blue-500 text-white py-1 px-2 rounded-xl inline-block mt-2 hover:bg-blue-700">Learn More</a>
+				</div>
+			</div>
+			<div class="rounded-lg border border-gray-200 bg-white px-2 py-2 flex flex-col">
+				<img src={website} alt="" class="bg-gray-900 rounded mt-2">
+				<div class="py-3.5 px-5 mt-3">
+					<h2 class="text-xl font-bold text-blue-500">This Website</h2>
+					<p class="mt-2.5 text-gray-800">
+						Created personal website using AstroJS, ReactJS and TailwindCSS.
+					</p>
+				</div>
+			</div>
+			<div class="rounded-lg border border-gray-200 bg-white px-2 py-2 flex flex-col">
+				<img src={fmuntenth} alt="" class="bg-gray-900 rounded">
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500">FMUNTENTH Software Team Member</h2>
+					<p class="text-gray-800">
+						Worked with a team of electrical and computer engineers to create an autonomous racecar 1/10 the size of a normal car. This was accomplished by using
+						python to make the algorithm and using ROS to allow the algorithm to communicate with the hardware components. The team competed in the competition held 
+						in San Antonio, Texas for CPS-IOT week.
+					</p>
+					<a href="https://fmuntenth.com/" class="bg-blue-500 text-white py-1 px-2 rounded-xl inline-block mt-2 hover:bg-blue-700">Learn More</a>
+				</div>
+			</div>
 		</div>
+		<h1 class="text-4xl text-blue-500 font-bold mt-12 text-center">Employment</h1>
+		<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-16 mx-8 my-16">
+			<div class="rounded-lg border border-gray-200 bg-white flex flex-col">
+				<img src={mun} alt="" class="bg-gray-900 w-full my-28">
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500">Research Intern</h2>
+					<p class="mt-2.5 text-gray-800 text-center">
+						Worked with Dr. Andrew Vardy to develop a novel algorithm to gather pucks at a goal location using swarm robotics. Simulated these robots in CoppeliaSim and programmed the robots in python.
+						Presented topics in an understandable way to summer camp aged children.
+					</p>
+				</div>
+			</div>
+			<div class="rounded-lg border border-gray-200 bg-white flex flex-col">
+				<img src={ymca} alt="" class="bg-gray-900 w-full">
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500">Lifeguard</h2>
+					<p class="mt-2.5 text-gray-800 text-center">
+						Working as a lifeguard and swim instructor from July 2019 to present. Responsable for the safety of patrons while working. Promoted to deck lead in January 2021.
+						Responsabilities of deck lead include leading a group of 4-6 swim instructors, ensuring that lessons begin on time, and dealing with any issues that patrons may have with
+						swimming lessons.
+					</p>
+				</div>
+			</div>
+			<div class="rounded-lg border border-gray-200 bg-white flex flex-col">
+				<img src={canada} alt="" class="bg-gray-900 w-full my-28">
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500">Ballot Counter</h2>
+					<p class="mt-2.5 text-gray-800 text-center">
+						Worked as a federal ballot counter in September 2021. Entrusted to input counted ballots into computer program.
+					</p>
+				</div>
+			</div>
+		</div>
+		<h1 class="text-4xl text-blue-500 font-bold mt-12 text-center">Contact Me</h1>
+		<div class="grid grid-cols-1 gap-16 mx-8 mt-4 mb-16">
+			<div class="flex flex-col">
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500 text-center">Email</h2>
+					<p class="mt-2.5 text-white text-center">
+						sfsheppard@mun.ca
+					</p>
+				</div>
+				<div class="py-3.5 px-5">
+					<h2 class="text-xl font-bold text-blue-500 text-center">Phone</h2>
+					<p class="mt-2.5 text-white text-center">
+						(709) 325-5347
+					</p>
+				</div>
+			</div>
+		</div>
+	</main>
 	</main>
 </Layout>

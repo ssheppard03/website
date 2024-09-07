@@ -2,10 +2,21 @@
 import Layout from "../layouts/Layout.astro"
 import ymca from "../photos/ymca.png"
 import canada from "../photos/canada.png"
+import mun from "../photos/mun.png"
 ---
 
 <Layout title="Employment">
-    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-16 max-w-screen-lg mx-auto mt-16">
+    <div class="grid sm:grid-cols-1 lg:grid-cols-2 gap-16 max-w-screen-lg mx-auto my-16">
+        <div class="rounded-lg border border-gray-200 bg-white flex flex-col">
+            <img src={mun} alt="" class="bg-gray-900 w-full my-28">
+            <div class="py-3.5 px-5">
+                <h2 class="text-xl font-bold text-blue-500">Research Intern</h2>
+                <p class="mt-2.5 text-gray-800 inset-x-0">
+                    Worked with Dr. Andrew Vardy to develop a novel algorithm to gather pucks at a goal location using swarm robotics. Simulated these robots in CoppeliaSim and programmed the robots in python.
+                    Presented topics in an understandable way to summer camp aged children.
+                </p>
+            </div>
+        </div>
         <div class="rounded-lg border border-gray-200 bg-white flex flex-col">
             <img src={ymca} alt="" class="bg-gray-900 w-full">
             <div class="py-3.5 px-5">
